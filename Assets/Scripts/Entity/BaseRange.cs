@@ -1,15 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BaseRange : MonoBehaviour {
+public class BaseRange : BaseUnit 
+{
+	protected int _steps;
+	protected int _RangeDmg;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
+
+
 }
