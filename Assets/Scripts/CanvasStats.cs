@@ -6,15 +6,18 @@ public class CanvasStats : MonoBehaviour
 	private bool _activeCanvas = false;
 	private BaseUnit baseUnit;
 
-	public void Start()
+	void Awake()
 	{
+		baseUnit = gameObject.GetComponentInParent<BaseUnit> ();
 		baseUnit.ActionClicked += ShowStatsCanvas;
+		this.gameObject.SetActive (false);
 	}
 
 	private void ShowStatsCanvas()
 	{
-		if (_activeCanvas = false) {
-			this.gameObject.SetActive (true);
+		if (_activeCanvas == false) {
+			//this.gameObject.SetActive (true);
+			this.gameObject.SetActive(true);
 			_activeCanvas = true;
 		} else {
 			this.gameObject.SetActive (false);

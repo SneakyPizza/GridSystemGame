@@ -12,8 +12,7 @@ public class BaseUnit : MonoBehaviour
 
 	public delegate void ClickAction ();
 	public event ClickAction ActionClicked;
-
-
+	
 	public int health
 	{
 		get{
@@ -33,8 +32,8 @@ public class BaseUnit : MonoBehaviour
 	{
 		if (gameObject.tag == "Unit") 
 		{
-			Debug.Log("Unit clicked");
-			ActionClicked();
+			if (ActionClicked != null)
+				ActionClicked();
 		}
 	}
 }
