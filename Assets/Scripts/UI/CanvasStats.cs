@@ -15,8 +15,9 @@ public class CanvasStats : MonoBehaviour
 
 	private void ShowStatsCanvas()
 	{
-		if (_activeCanvas == false) {
-			//this.gameObject.SetActive (true);
+		//Turning the Canvas on / off
+		if (_activeCanvas == false) 
+		{
 			this.gameObject.SetActive(true);
 			_activeCanvas = true;
 		} else {

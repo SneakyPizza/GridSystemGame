@@ -33,7 +33,12 @@ public class BaseUnit : MonoBehaviour
 		if (gameObject.tag == "Unit") 
 		{
 			if (ActionClicked != null)
+			{
 				ActionClicked();
+			}
+
+
 		}
 	}
+	
 }
