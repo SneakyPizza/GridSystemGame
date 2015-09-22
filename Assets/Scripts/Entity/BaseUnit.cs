@@ -28,6 +28,7 @@ public class BaseUnit : MonoBehaviour
 		_death = death;
 	}
 
+	// if clicked show canvas ( CanvasStats Script )
  	public void OnMouseDown()
 	{
 		if (gameObject.tag == "Unit") 
@@ -36,9 +37,9 @@ public class BaseUnit : MonoBehaviour
 			{
 				ActionClicked();
 			}
-
-
 		}
 	}
+
+
 	
 }
